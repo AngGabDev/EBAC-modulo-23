@@ -1,0 +1,25 @@
+{
+  "name": "cy-intercept",
+  "version": "1.0.0",
+  "description": "Testes sobre cypress intercept",
+  "homepage": "https://github.com/AngGabDev/EBAC-modulo-23#readme",
+  "bugs": {
+    "url": "https://github.com/AngGabDev/EBAC-modulo-23/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngGabDev/EBAC-modulo-23.git"
+  },
+  "license": "ISC",
+  "author": "angelopires",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "dependencies": {
+    "cypress": "^14.5.3",
+    "dotenv": "^17.2.3",
+    "puppeteer-core": "^24.36.1"
+  }
+}
