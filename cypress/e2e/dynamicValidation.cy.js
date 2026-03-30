@@ -16,6 +16,8 @@ describe('Categories', () => {
             homePage.openMenu('Browse')
             homePage.opencategoriesfilter()
             homePage.categories().should('contain.text', category.name)
+
+            cy.compareSnapshot(Cypress.currentTest.title)
          });
 
     })

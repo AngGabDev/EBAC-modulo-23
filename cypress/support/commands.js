@@ -8,3 +8,7 @@ Cypress.Commands.add('login', (email, senha) =>{
     loginPage.login(email, senha)
 
 })
+
+const compareSnapshotCommand = require("cypress-lens/dist/command")
+
+compareSnapshotCommand();

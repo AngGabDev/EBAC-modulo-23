@@ -30,4 +30,6 @@ describe ('Teste de intercept',() =>{
         homePage.opencategoriesfilter()
         homePage.categories().should('have.length', 1)
     })
+
+    cy.compareSnapshot(Cypress.currentTest.title)
 })

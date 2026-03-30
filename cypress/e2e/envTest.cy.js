@@ -25,4 +25,6 @@ describe ('Teste de Enviroment Variables ',() =>{
     cy.visit("/")
   })
 
+    cy.compareSnapshot(Cypress.currentTest.title)
+
 })

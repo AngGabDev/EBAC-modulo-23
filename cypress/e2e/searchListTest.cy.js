@@ -8,17 +8,23 @@ describe('Categories', () => {
     
     beforeEach('Deve logar com sucesso',() =>{
         cy.login(email, senha)
-        
     })
     
-    categories.forEach(category => {
-        it('Deve pesquisar produtos e eles terem um valor', () => {
-            homePage.openMenu('Browse')
-            
-            homePage.categories().should('contain.text', category.name)
-         });
+    
+    it('Deve pesquisar produtos e eles terem um valor', () => {
+        homePage.openMenu('Browse')
+        homePage.openSearchProduct('in')
+        homePage.products().should('have.length.greaterThan', 0)
 
-    })
+        homePage.products().each(product => {
+            let price = product.find('[data-testid="price"]').text()
+            expect(price).to.contain('R$')
+        })
+
+        cy.compareSnapshot(Cypress.currentTest.title)
+
+    })   
+    
 
     
 }); 

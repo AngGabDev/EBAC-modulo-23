@@ -15,11 +15,18 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run",
+    "report": "npm run mergeJsonReport && npm run generateReport",
+    "mergeJsonReport": "npx mochawesome-merge ./mochawesome-report/*.json -o./mochawesome-report/result.json",
+    "generateReport": "npx marge ./mochawesome-report/result.json -o ./mochawesome-report"
   },
   "dependencies": {
     "cypress": "^14.5.3",
+    "cypress-html-reporter": "^11.0.0",
+    "cypress-lens": "^1.17.0",
     "dotenv": "^17.2.3",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
     "puppeteer-core": "^24.36.1"
   }
 }
