@@ -15,10 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "report": "npm run mergeJsonReport && npm run generateReport",
-    "mergeJsonReport": "npx mochawesome-merge ./mochawesome-report/*.json -o./mochawesome-report/result.json",
-    "generateReport": "npx marge ./mochawesome-report/result.json -o ./mochawesome-report"
+    "test": "npx cypress run"
   },
   "dependencies": {
     "cypress": "^14.5.3",

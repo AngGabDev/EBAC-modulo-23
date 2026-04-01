@@ -1,0 +1,40 @@
+{
+    "success": true,
+    "cart": {
+        "_id": "691a15e1355bea788e578782",
+        "products": [
+            {
+                "productId": {
+                    "_id": "67c8d8619fccb188a86582aa",
+                    "photos": [
+                        "https://exemplo.com/camiseta-bonita.jpg"
+                    ],
+                    "name": "Camiseta EBAC",
+                    "price": 159.99,
+                    "quantity": 23,
+                    "specialPrice": 159.99
+                },
+                "quantity": 2,
+                "_id": "69cd7a2c51e18775d20a0ba4"
+            },
+            {
+                "productId": {
+                    "_id": "67ca29e06d232b1312a9cd5b",
+                    "photos": [
+                        "https://exemplo.com/camiseta-bonita.jpg"
+                    ],
+                    "name": "Camiseta EBAC",
+                    "price": 159.99,
+                    "quantity": 29,
+                    "specialPrice": 159.99
+                },
+                "quantity": 1,
+                "_id": "69cd7a4f51e18775d20a0bd1"
+            }
+        ],
+        "userId": "67f55de836e994dfd8baa11a",
+        "createdAt": "2025-11-16T18:20:17.536Z",
+        "updatedAt": "2026-04-01T20:11:14.742Z",
+        "__v": 0
+    }
+}
